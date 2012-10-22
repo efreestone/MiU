@@ -1,8 +1,8 @@
 /*
 Elijah Freestone
 MiU 1211
-Project #
-Date
+Project 1
+10-22-12
 */
 
 //Wait until DOM is ready
