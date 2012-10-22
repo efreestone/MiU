@@ -1,8 +1,8 @@
 /*
 Elijah Freestone
-VFW 1210
-Project 4
-10-14-12
+MiU 1211
+Project #
+Date
 */
 
 var json = {
