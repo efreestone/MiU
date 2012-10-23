@@ -5,7 +5,7 @@ Project 1
 10-22-12
 */
 
-var json = {
+var json = { //Needs 20 Events
 	"event1": {
 		"events": ["Event type:", "Birthday"],
 		"evdate": ["Date:", "2012-11-21"],

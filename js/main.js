@@ -62,7 +62,7 @@ window.addEventListener("DOMContentLoaded", function() {
     };
     
    function saveData(key) {
-   		//If the is no key, this means this is a brand ne item and we need a new key.
+   		//If there is no key, this means this is a brand new item and we need a new key.
 	   	if(!key) {
 			var id = Math.floor(Math.random()*100000001);
 		}else{
