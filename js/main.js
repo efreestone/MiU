@@ -281,7 +281,7 @@ window.addEventListener("DOMContentLoaded", function() {
     }; 
 
     //Variable defaults
-    var eventTypes = ["--Choose An Event Type--", "Birthday", "Anniversary", "Other"],
+    var eventTypes = ["--Choose An Event Type--", "Anniversary", "Appointment", "Birthday", "Meeting", "Other"],
         attendValue,
         errMsg = gE("errors");
         
