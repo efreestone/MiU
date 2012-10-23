@@ -9,7 +9,7 @@ Project 1
 window.addEventListener("DOMContentLoaded", function() {
 
     //getElementById Function
-    function $(x) {
+    function gE(x) {
         var theElement = document.getElementById(x);
         return theElement;
     };
@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", function() {
     //Create select field element and populate with options
     function makeEvType() { 
         var formTag = document.getElementsByTagName("form"), //formTag is an array of all the form tags
-            selectLi = $("select"),
+            selectLi = gE("select"),
             makeSelect = document.createElement("select");
             makeSelect.setAttribute("id", "events");
         for(var i=0, j=eventTypes.length; i<j; i++) {
@@ -44,17 +44,17 @@ window.addEventListener("DOMContentLoaded", function() {
     function toggleControls(n) {
         switch(n) {
             case "on":
-                $("eventForm").style.display = "none";
-                $("clearData").style.display = "inline";
-                $("displayData").style.display = "none";
-                $("addNew").style.display = "inline";
+                gE("eventForm").style.display = "none";
+                gE("clearData").style.display = "inline";
+                gE("displayData").style.display = "none";
+                gE("addNew").style.display = "inline";
                 break;
             case "off":
-                $("eventForm").style.display = "block";
-                $("clearData").style.display = "inline";
-                $("displayData").style.display = "inline";
-                $("addNew").style.display = "none";
-                $("items").style.display = "none";
+                gE("eventForm").style.display = "block";
+                gE("clearData").style.display = "inline";
+                gE("displayData").style.display = "inline";
+                gE("addNew").style.display = "none";
+                gE("items").style.display = "none";
                 break;
             default:
                 return false;
@@ -75,12 +75,12 @@ window.addEventListener("DOMContentLoaded", function() {
         //Object properties contain array with the form label and input value.
     getSelectedRadio();
         var item         = {};
-            item.events   = ["Event:", $("events").value]; //Event type selector
-            item.evdate  = ["Date:", $("evdate").value]; //Event Date
-            item.evinfo  = ["Info:", $("evinfo").value]; //Event Info
-            item.importance = ["Importance:", $("importance").value]; //Event Importance Slider
+            item.events   = ["Event:", gE("events").value]; //Event type selector
+            item.evdate  = ["Date:", gE("evdate").value]; //Event Date
+            item.evinfo  = ["Info:", gE("evinfo").value]; //Event Info
+            item.importance = ["Importance:", gE("importance").value]; //Event Importance Slider
             item.attend = ["Is attendance required?:", attendValue]; //Attendance Radio Buttons
-            item.details = ["Event Details:", $("details").value]; //Event Details
+            item.details = ["Event Details:", gE("details").value]; //Event Details
             
         //Save Data into Local Storage: Use Stringify to convert object to a string.
         localStorage.setItem(id, JSON.stringify(item));
@@ -99,7 +99,7 @@ window.addEventListener("DOMContentLoaded", function() {
         var makeList = document.createElement("ul");
         makeDiv.appendChild(makeList);
         document.body.appendChild(makeDiv);
-        $("items").style.display = "block";
+        gE("items").style.display = "block";
         for(var i=0, len=localStorage.length; i<len; i++) {
             var makeLi = document.createElement("li");
             var linksLi = document.createElement("ul");
@@ -165,8 +165,7 @@ window.addEventListener("DOMContentLoaded", function() {
     	var deleteText = "Delete Date";
     	deleteLink.addEventListener("click", deleteItem);
     	deleteLink.innerHTML = deleteText;
-    	linksLi.appendChild(deleteLink);
-	    
+    	linksLi.appendChild(deleteLink);	    
     };
     
     //Function for edit item link
@@ -178,12 +177,11 @@ window.addEventListener("DOMContentLoaded", function() {
 	    //Show the form
 	    toggleControls("off");
 	    
-	    
 	    //Populate the form fields with current localStorage values.
-	    $("events").value = item.events[1];
-	    $("evdate").value = item.evdate[1];
-	    $("evinfo").value = item.evinfo[1];
-	    $("importance").value = item.importance[1];
+	    gE("events").value = item.events[1];
+	    gE("evdate").value = item.evdate[1];
+	    gE("evinfo").value = item.evinfo[1];
+	    gE("importance").value = item.importance[1];
 	    var radios = document.forms[0].attend;
 	    	for(var i=0; i<radios.length; i++) {
 		    	if(radios[i].value == "Yes" && item.attend[1] == "Yes") {
@@ -194,13 +192,13 @@ window.addEventListener("DOMContentLoaded", function() {
 			    	radios[i].setAttribute("checked", "checked");
 			    }
 	    	}
-	    $("details").value = item.details[1];
+	    gE("details").value = item.details[1];
 	    
 	    //Remove the initial listener from the input "Save Date" button.
 	    save.removeEventListener("click", saveData)
 	    //Change submit button value to edit button
-	    $("submit").value = "Edit Date";
-	    var editSubmit = $("submit");
+	    gE("submit").value = "Edit Date";
+	    var editSubmit = gE("submit");
 	    //Save the key value established in this function as a property of the editSubmit event
 	    //so we can use that value when we save the data we edited.
 	    editSubmit.addEventListener("click", validate);
@@ -233,9 +231,9 @@ window.addEventListener("DOMContentLoaded", function() {
     
     function validate(e) {
     	//Define elements we want to check
-    	var getEvents = $("events");
-    	var getEvdate = $("evdate");
-    	var getEvinfo = $("evinfo");
+    	var getEvents = gE("events");
+    	var getEvdate = gE("evdate");
+    	var getEvinfo = gE("evinfo");
     	
     	//Reset error messages
     	errMsg.innerHTML = "";
@@ -285,15 +283,15 @@ window.addEventListener("DOMContentLoaded", function() {
     //Variable defaults
     var eventTypes = ["--Choose An Event Type--", "Birthday", "Anniversary", "Other"],
         attendValue,
-        errMsg = $("errors");
+        errMsg = gE("errors");
         
     makeEvType();
         
     //Set link & Submit Click Events
-    var save = $("submit");
+    var save = gE("submit");
     save.addEventListener("click", validate);
-    var show = $("displayData");
+    var show = gE("displayData");
     show.addEventListener("click", showData);
-    var clear = $("clearData");
+    var clear = gE("clearData");
     clear.addEventListener("click", clearData); 
 });
