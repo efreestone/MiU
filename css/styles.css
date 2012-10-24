@@ -34,21 +34,10 @@ body {
     position: inherit;
 }
 
-
-body>a {  /* For Save-a-date <a> tag on index */
-    font-family: "Helvetica", "Arial";
-    display: table;
-    text-align: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(#05c331), to(#026f1b));
-    background-color: #026f1b;
-    color: #ffffff;
-    font-size: 200%;
-    padding: 20px 5%;
-    margin: auto;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    border: solid 1px #172934;
-    text-shadow: 0 -1px 0 #172934;
+a>img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 legend {
