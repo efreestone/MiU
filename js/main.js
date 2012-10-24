@@ -122,7 +122,7 @@ window.addEventListener("DOMContentLoaded", function() {
         }
     };
     
-    //Get th eimage for the correct event category.
+    //Get and apply the image for the correct event category.
     function getImage(catName, makeSubList) {
 	    var imageLi = document.createElement("li");
 	    makeSubList.appendChild(imageLi);

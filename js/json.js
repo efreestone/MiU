@@ -113,4 +113,76 @@ var json = { //Needs 20 Events
 		"attend": ["Is attendance required?:", "Yes"],
 		"details": ["Event details:", "Gonna party like it's 1899!!"],
 	},
+	
+	"event13": {
+		"events": ["Event type:", "Other"],
+		"evdate": ["Date:", "2012-10-31"],
+		"evinfo": ["Info:", "Halloween"],
+		"importance": ["Importance:", "2"],
+		"attend": ["Is attendance required?:", "Undecided"],
+		"details": ["Event details:", "Trick or treat!!"],
+	},
+	
+	"event14": {
+		"events": ["Event type:", "Birthday"],
+		"evdate": ["Date:", "2013-09-24"],
+		"evinfo": ["Info:", "Chars Birthday"],
+		"importance": ["Importance:", "5"],
+		"attend": ["Is attendance required?:", "Yes"],
+		"details": ["Event details:", "Most likely going to dinner and a movie."],
+	},
+	
+	"event15": {
+		"events": ["Event type:", "Appointment"],
+		"evdate": ["Date:", "2013-03-31"],
+		"evinfo": ["Info:", "Appointment with Gag Commitee"],
+		"importance": ["Importance:", "4"],
+		"attend": ["Is attendance required?:", "Yes"],
+		"details": ["Event details:", "Last years April Fools gag was good. May be hard to top."],
+	},
+	
+	"event16": {
+		"events": ["Event type:", "Meeting"],
+		"evdate": ["Date:", "2012-12-10"],
+		"evinfo": ["Info:", "Meeting with Elves Union"],
+		"importance": ["Importance:", "4"],
+		"attend": ["Is attendance required?:", "Yes"],
+		"details": ["Event details:", "The elves want more money or they will strike!"],
+	},
+	
+	"event17": {
+		"events": ["Event type:", "Appointment"],
+		"evdate": ["Date:", "2012-10-27"],
+		"evinfo": ["Info:", "Haircut"],
+		"importance": ["Importance:", "1"],
+		"attend": ["Is attendance required?:", "Yes"],
+		"details": ["Event details:", "Get my hair did."],
+	},
+	
+	"event18": {
+		"events": ["Event type:", "Birthday"],
+		"evdate": ["Date:", "2013-02-20"],
+		"evinfo": ["Info:", "Kurt Cobains birthday"],
+		"importance": ["Importance:", "5"],
+		"attend": ["Is attendance required?:", "Yes"],
+		"details": ["Event details:", "Kurt would have been 46. Light a candle."],
+	},
+	
+	"event19": {
+		"events": ["Event type:", "Anniversary"],
+		"evdate": ["Date:", "2013-04-05"],
+		"evinfo": ["Info:", "Anniversary of Kurt Cobains Death"],
+		"importance": ["Importance:", "4"],
+		"attend": ["Is attendance required?:", "Yes"],
+		"details": ["Event details:", "Gone too soon. Light a candle."],
+	},
+	
+	"event20": {
+		"events": ["Event type:", "Anniversary"],
+		"evdate": ["Date:", "2013-07-04"],
+		"evinfo": ["Info:", "4th of July"],
+		"importance": ["Importance:", "4"],
+		"attend": ["Is attendance required?:", "Yes"],
+		"details": ["Event details:", "Yay!! I get to blow stuff up!!"],
+	}
 };
