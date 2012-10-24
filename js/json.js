@@ -75,7 +75,7 @@ var json = { //Needs 20 Events
 		"evinfo": ["Info:", "Meeting with Doc"],
 		"importance": ["Importance:", "5"],
 		"attend": ["Is attendance required?:", "Yes"],
-		"details": ["Event details:", "Gotta fix the DeLorean first!!"],
+		"details": ["Event details:", "Must fix the DeLorean first!!"],
 	},
 	
 	"event9": {

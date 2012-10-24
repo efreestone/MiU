@@ -139,13 +139,20 @@ nav>a { /* All <a> tags within nav. Display Data, Clear Local Data, etc */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#f2fdff), to(#97edfc));
 }
 
-img {
+li>img {
 	background-color: #f2fdff;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     border: solid 1px #172934;
     padding: 4px;
 }
+
+h1>img {
+	background-color: #7ED0E0;
+	-webkit-border-radius: none;
+    padding: 4px;
+}
+
 
 div>ul>li {
     background-color: #ccf5fd;
