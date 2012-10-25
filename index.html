@@ -24,9 +24,29 @@
 		
 	</head>
 	<body>
-		<!-- <h1></h1> -->
-			<!-- <h2>Never forget a date again!</h2> -->
-		<!-- Add a Date Link to additem.html -->	
+		<!-- Entire img is link to additem.html -->	
 		<a href="additem.html"><img src="img/Logo1.jpg"></img></a>
+		<!-- Search form text box -->
+		<form action="#" method="post" id="searchBrowse" />
+			<fieldset>
+				<legend>Search Dates</legend>
+						<div><label for="searchBox">Search Term: </label><input type="text" id="search" /> <br>
+						<input type="button" value="Search Dates!" id="searchButton" /></div>
+			</fieldset>
+			<fieldset>
+				<legend>Browse by Event Type</legend>
+					<div id="Browse">	
+						<select id="evtype">
+							<option value="--Choose An Event Type--">--Choose An Event Type--</option>
+							<option value="Anniversary">Anniversary</option>
+							<option value="Appointment">Appointment</option>
+							<option value="Birthday">Birthday</option>
+							<option value="Meeting">Meeting</option>
+							<option value="Other">Other</option>
+						</select>	
+					</div>
+			</fieldset>
+			
+		</form>
 	</body>
 </html>

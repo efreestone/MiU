@@ -12,16 +12,7 @@ html {
 h1 {
     text-align: center;
     padding: 12px;
-    margin: -12px -12px 8px -12px;
-}
-
-h2 {
-    font-family: "Helvetica", "Arial";
-    color: #172934;
-    font-size: 150%;
-    text-align: center;
-    padding: 16px;
-    margin: -12px -16px 16px -16px;
+    margin: -12px -12px 0px -12px;
 }
 
 body {
@@ -34,13 +25,14 @@ body {
     position: inherit;
 }
 
-a>img {
+a>img { /* To Center my Feature on index*/
 	display: block;
 	margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 
-legend {
+legend { /* Titles */
     background-color: #f2fdff;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -50,13 +42,13 @@ legend {
     color: #172934;
 }
 
-span {
+span { /* Required elements notice */
 	font-family: "Helvetica", "Arial";
 	color: #172934;
     font-size: 75%;	
 }
 
-fieldset {
+fieldset { /* Light colored box around various elements */
     background-color: #ccf5fd;
     font-size: 125%;
     -webkit-border-radius: 10px;
@@ -65,7 +57,16 @@ fieldset {
     margin-bottom: 5px;
 }
 
-ul#errors {
+/*fieldset#searchField { /* Light colored box around various elements */
+    background-color: #ccf5fd;
+    font-size: 125%;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: solid 1px #172934;
+    margin-bottom: 5px;
+}*/
+
+ul#errors { /* Input errors warning */
 	font-family: "Helvetica", "Arial";
 	color: red;
     font-size: 75%;	
@@ -92,7 +93,7 @@ input#importance::-webkit-slider-thumb { /* Slider */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#68d4ea), to(#23a0b9));
 }
 
-textarea {
+textarea { /* Event Details text box */
     width: 90%;
     height: 80px;
     border: 1px solid #172934;
@@ -128,7 +129,18 @@ nav>a { /* All <a> tags within nav. Display Data, Clear Local Data, etc */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#f2fdff), to(#97edfc));
 }
 
-li>img {
+input#searchButton { /* Search Button */
+	background-color: #f2fdff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: solid 1px #172934;
+    padding: 2px 7px;
+    font-family: "Helvetica", "Arial";
+    font-size: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2fdff), to(#97edfc));
+}
+
+li>img { /* icons images in stored data */
 	background-color: #f2fdff;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -136,14 +148,14 @@ li>img {
     padding: 4px;
 }
 
-h1>img {
+h1>img { /* Logo on additem */
 	background-color: #7ED0E0;
 	-webkit-border-radius: none;
     padding: 4px;
 }
 
 
-div>ul>li {
+div>ul>li { /* stored data */
     background-color: #ccf5fd;
     color: #172934;
     -webkit-border-radius: 10px;

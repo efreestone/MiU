@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", function() {
         return theElement;
     };
     
-    //Create select field element and populate with options
+    //Create select field element (Event Types) and populate with options
     function makeEvType() { 
         var formTag = document.getElementsByTagName("form"), //formTag is an array of all the form tags
             selectLi = gE("select"),
@@ -206,6 +206,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	    
     };
     
+    //Delete single event 
     function deleteItem() {
 	    var ask = confirm("Are you sure you want to delete this date?");
 	    if(ask) {
@@ -217,6 +218,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	    }
     };
     
+    //Clear all stored data
     function clearData() {
     	if(localStorage.length === 0) {
             alert("No data to clear.");
@@ -229,6 +231,7 @@ window.addEventListener("DOMContentLoaded", function() {
         }
     };
     
+    //Validate entry fields
     function validate(e) {
     	//Define elements we want to check
     	var getEvents = gE("events");
@@ -278,8 +281,8 @@ window.addEventListener("DOMContentLoaded", function() {
 		    //Remember this key value was passed through the editSubmit event listener as a property
 		    saveData(this.key);
 	    }	   
-    }; 
-
+    };
+    
     //Variable defaults
     var eventTypes = ["--Choose An Event Type--", "Anniversary", "Appointment", "Birthday", "Meeting", "Other"],
         attendValue,
@@ -289,9 +292,9 @@ window.addEventListener("DOMContentLoaded", function() {
         
     //Set link & Submit Click Events
     var save = gE("submit");
-    save.addEventListener("click", validate);
+    save.addEventListener("click", validate); //Validation Event Listener
     var show = gE("displayData");
-    show.addEventListener("click", showData);
+    show.addEventListener("click", showData); //Display Stored Data Event Listener
     var clear = gE("clearData");
-    clear.addEventListener("click", clearData); 
+    clear.addEventListener("click", clearData); //Delete All Stored Data Event Listener   
 });
