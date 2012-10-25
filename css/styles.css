@@ -57,15 +57,6 @@ fieldset { /* Light colored box around various elements */
     margin-bottom: 5px;
 }
 
-/*fieldset#searchField { /* Light colored box around various elements */
-    background-color: #ccf5fd;
-    font-size: 125%;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    border: solid 1px #172934;
-    margin-bottom: 5px;
-}*/
-
 ul#errors { /* Input errors warning */
 	font-family: "Helvetica", "Arial";
 	color: red;
