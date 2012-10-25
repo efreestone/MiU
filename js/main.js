@@ -296,5 +296,5 @@ window.addEventListener("DOMContentLoaded", function() {
     var show = gE("displayData");
     show.addEventListener("click", showData); //Display Stored Data Event Listener
     var clear = gE("clearData");
-    clear.addEventListener("click", clearData); //Delete All Stored Data Event Listener   
+    clear.addEventListener("click", clearData); //Delete All Stored Data Event Listener  
 });
