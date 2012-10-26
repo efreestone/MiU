@@ -107,6 +107,9 @@ input#submit { /* Save Date button on additem */
     border: solid 1px #172934;
     text-shadow: 0 -1px 0 #172934;
     margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav>a { /* All <a> tags within nav. Display Data, Clear Local Data, etc */
