@@ -2,7 +2,7 @@
 Elijah Freestone
 MiU 1211
 Project 2
-Gold App
+Bronze App
 10-26-12
 */
 
