@@ -1,49 +1,68 @@
-<!doctype html>
+<!doctype html> 
 	<!-- Elijah Freestone -->
 	<!-- MiU 1211 -->
 	<!-- Project 2 -->
 	<!-- Bronze App -->
 	<!-- 10-26-12 -->
-	
-<html>
+	 
+<html lang="en">
 	<head>
-		<!-- Link to CSS -->
-		<link rel="stylesheet" href="css/styles.css" type="text/css" />
-		<!-- Character Set Meta -->
-		<meta charset="utf-8" />
-		<!-- Description Meta -->
-		<meta name="description" content="An app to save important dates, such as Birthdays and Anniversaries." />
-		<!-- Keywords Meta -->
-		<meta name="keywords" content="birthdays, anniversaries, date" />
-		<!-- Robots Meta -->
-		<meta name="robots" content="index, follow" />
-		<!-- Viewport Meta -->
-		<meta name="viewport" content="user-scalable=no, width=device-width" />
+	
+		<meta charset="utf-8">
 		
-		<!--Page Title-->
 		<title>Save-a-date</title>
 		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		
+		<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/indexStyles.css" type="text/css" />
+		
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+	
 	</head>
 	<body>
+		<div data-role="page" id="index">
 		<!-- Entire img is link to additem.html -->	
-		<a href="additem.html"><img src="img/Logo1.jpg"></img></a>
-		<!-- Search form text box -->
-		<form action="#" method="post" id="searchBrowse" />
-			<fieldset>
-				<legend>Search Dates</legend>
-					<div><label for="searchBox">Search Term: </label><input type="text" id="search" /> <br></div>
-						<input type="button" value="Search Dates!" id="searchButton" />
-			</fieldset>
-			<fieldset>
-				<legend>Browse by Event Type</legend>
-					<div>
-						<a href="404.html"><img src="img/AnnBtn.jpg"></img></a>
-						<a href="404.html"><img src="img/AppBtn.jpg"></img></a>
-						<a href="404.html"><img src="img/BirBtn.jpg"></img></a>
-						<a href="404.html"><img src="img/MeeBtn.jpg"></img></a>
-						<a href="404.html"><img src="img/OthBtn.jpg"></img></a>
-					</div>
-			</fieldset>
-		</form>
+			<a href="additem.html" Data-ajax="false"><img src="img/Logo1.jpg" data-id="feature"></img></a>
+			<!-- Search form text box -->
+				<div data-role="content">
+				<fieldset>
+					<legend>Browse by Event Type</legend>
+						<ul data-role="listview" data-filter="true" data-theme="b" data-inset="true">
+	
+							<li><a href="404.html" Data-ajax="false">Anniversary</a></li>
+							<li><a href="404.html" Data-ajax="false">Appointment</a></li>
+							<li><a href="404.html" Data-ajax="false">Birthday</a></li>
+							<li><a href="404.html" Data-ajax="false">Meeting</a></li>
+							<li><a href="404.html" Data-ajax="false">Other</a></li>
+	
+						</ul>
+				</fieldset>
+				</div>			
+			<div data-role="footer" data-position="fixed" data-id="index" data-theme="a">
+				<div data-role="navbar" >
+					<ul>
+						<li><a href="404.html" Data-ajax="false">Favorite</a></li>
+						<li><a href="404.html" Data-ajax="false">Change</a></li>
+						<li><a href="404.html" Data-ajax="false">Search</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	
 	</body>
 </html>

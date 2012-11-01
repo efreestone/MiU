@@ -21,6 +21,7 @@ window.addEventListener("DOMContentLoaded", function() {
             selectLi = gE("select"),
             makeSelect = document.createElement("select");
             makeSelect.setAttribute("id", "events");
+            
         for(var i=0, j=eventTypes.length; i<j; i++) {
             var makeOption = document.createElement("option");
             var optText = eventTypes[i];
@@ -86,6 +87,7 @@ window.addEventListener("DOMContentLoaded", function() {
         //Save Data into Local Storage: Use Stringify to convert object to a string.
         localStorage.setItem(id, JSON.stringify(item));
         alert("Date Saved!");
+        window.location.reload();
     };
     
     function showData() {
@@ -96,9 +98,13 @@ window.addEventListener("DOMContentLoaded", function() {
         }
         //Write Data from Local Storage to the browser.
         var makeDiv = document.createElement("div");
+   //makeDiv.insertBefore("makeDiv", "navBar");
         makeDiv.setAttribute("id", "items");
+        //makeDiv.setAttribute("data-role", "content");
         var makeList = document.createElement("ul");
         makeDiv.appendChild(makeList);
+        //makeList.setAttribute("data-role", "listview");
+        //makeList.setAttribute("data-filter", "true");
         document.body.appendChild(makeDiv);
         gE("items").style.display = "block";
         for(var i=0, len=localStorage.length; i<len; i++) {
@@ -204,7 +210,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	    //so we can use that value when we save the data we edited.
 	    editSubmit.addEventListener("click", validate);
 	    editSubmit.key = this.key;
-	    
+	    //window.location.reload();
     };
     
     //Delete single event 
