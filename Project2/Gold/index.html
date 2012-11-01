@@ -1,49 +1,346 @@
-<!doctype html>
+<!doctype html> 
 	<!-- Elijah Freestone -->
 	<!-- MiU 1211 -->
 	<!-- Project 2 -->
 	<!-- Gold App -->
 	<!-- 10-26-12 -->
-	
-<html>
+	 
+<html lang="en">
 	<head>
-		<!-- Link to CSS -->
-		<link rel="stylesheet" href="css/styles.css" type="text/css" />
-		<!-- Character Set Meta -->
-		<meta charset="utf-8" />
-		<!-- Description Meta -->
-		<meta name="description" content="An app to save important dates, such as Birthdays and Anniversaries." />
-		<!-- Keywords Meta -->
-		<meta name="keywords" content="birthdays, anniversaries, date" />
-		<!-- Robots Meta -->
-		<meta name="robots" content="index, follow" />
-		<!-- Viewport Meta -->
-		<meta name="viewport" content="user-scalable=no, width=device-width" />
+	
+		<meta charset="utf-8">
 		
-		<!--Page Title-->
 		<title>Save-a-date</title>
 		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		
+		<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/indexStyles.css" type="text/css" />
+		
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+	
 	</head>
 	<body>
+		<div data-role="page" id="index">
 		<!-- Entire img is link to additem.html -->	
-		<a href="additem.html"><img src="img/Logo1.jpg"></img></a>
-		<!-- Search form text box -->
-		<form action="#" method="post" id="searchBrowse" />
-			<fieldset>
-				<legend>Search Dates</legend>
-					<div><label for="searchBox">Search Term: </label><input type="text" id="search" /> <br></div>
-						<input type="button" value="Search Dates!" id="searchButton" />
-			</fieldset>
-			<fieldset>
+			<a href="additem.html" Data-ajax="false"><img src="img/Logo1.jpg" data-id="feature"></img></a>
+			<!-- Search form text box -->
+				<div data-role="content">
+				<fieldset>
 				<legend>Browse by Event Type</legend>
-					<div>
-						<a href="404.html"><img src="img/AnnBtn.jpg"></img></a>
-						<a href="404.html"><img src="img/AppBtn.jpg"></img></a>
-						<a href="404.html"><img src="img/BirBtn.jpg"></img></a>
-						<a href="404.html"><img src="img/MeeBtn.jpg"></img></a>
-						<a href="404.html"><img src="img/OthBtn.jpg"></img></a>
-					</div>
-			</fieldset>
-		</form>
+					<div data-role="listview" data-filter="true" data-filtertext="true">
+						
+						<div data-role="collapsible" data-collapsed="true" data-theme="b">
+							<h3><img src="img/Anniversary.jpg"> Anniversary</h3>
+								
+							<ul>
+								<!-- <li><img src="img/Anniversary.jpg"></li> -->
+								<li>Event type: Anniversary</li>
+								<li>Date: 2013-02-14</li>
+								<li>Info: Grandma and Grandpas 60th</li>
+								<li>Importance: 5</li>
+								<li>Is attendance required?: No</li>
+								<li>Event details: Send White Lillies!!</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Anniversary.jpg"></li> -->
+								<li>Event type: Anniversary</li>
+								<li>Date: 2013-03-26</li>
+								<li>Info: 1 year in school</li>
+								<li>Importance: 2</li>
+								<li>Is attendance required?: No</li>
+								<li>Event details: 12 months down. 20 to go.</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Anniversary.jpg"></li> -->
+								<li>Event type: Anniversary</li>
+								<li>Date: 2013-04-05</li>
+								<li>Info: Anniversary of Kurt Cobains Death</li>
+								<li>Importance: 4</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: Gone too soon. Light a candle.</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Anniversary.jpg"></li> -->
+								<li>Event type: Anniversary</li>
+								<li>Date: 2013-07-04</li>
+								<li>Info: 4th of July</li>
+								<li>Importance: 4</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: Yay!! I get to blow stuff up!!</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+													 
+						</div>
+						
+						<div data-role="collapsible" data-collapsed="true" data-theme="b">
+							<h3><img src="img/Appointment.jpg"> Appointment</h3>
+							<ul>
+								<!-- <li><img src="img/Appointment.jpg"></li> -->
+								<li>Event type: Appointment</li>
+								<li>Date: 2012-10-27</li>
+								<li>Info: Haircut</li>
+								<li>Importance: 1</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: Get my hair did.</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Appointment.jpg"></li> -->
+								<li>Event type: Appointment</li>
+								<li>Date: 2013-03-31</li>
+								<li>Info: Appointment with Gag Committee</li>
+								<li>Importance: 4</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: Last years April Fools gag was good. May be hard to top.</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Appointment.jpg"></li> -->
+								<li>Event type: Appointment</li>
+								<li>Date: 2013-06-10</li>
+								<li>Info: Doctors Appointment</li>
+								<li>Importance: 5</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: At Dr. Thompsons Fort Collins office, 10:30am.</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+						</div>
+						
+						<div data-role="collapsible" data-collapsed="true" data-theme="b">
+							<h3><img src="img/Birthday.jpg"> Birthday</h3>
+							<ul>
+								<!-- <li><img src="img/Birthday.jpg"></li> -->
+								<li>Event type: Birthday</li>
+								<li>Date: 2012-11-21</li>
+								<li>Info: My Birthday</li>
+								<li>Importance: 5</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: Partay!!!</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Birthday.jpg"></li> -->
+								<li>Event type: Birthday</li>
+								<li>Date: 2013-01-22</li>
+								<li>Info: Moms Birthday</li>
+								<li>Importance: 5</li>
+								<li>Is attendance required?: No</li>
+								<li>Event details: Don't forget to send flowers!!</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Birthday.jpg"></li> -->
+								<li>Event type: Birthday</li>
+								<li>Date: 2013-02-20</li>
+								<li>Info: Kurt Cobains Birthday</li>
+								<li>Importance: 5</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: Kurt would have been 46. Light a candle.</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Birthday.jpg"></li> -->
+								<li>Event type: Birthday</li>
+								<li>Date: 2013-02-22</li>
+								<li>Info: Dads Birthday</li>
+								<li>Importance: 5</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: Surprise party at Dads house. Set-up starts at 4pm.</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Birthday.jpg"></li> -->
+								<li>Event type: Birthday</li>
+								<li>Date: 2013-06-21</li>
+								<li>Info: Brothers Birthday</li>
+								<li>Importance: 3</li>
+								<li>Is attendance required?: Undecided</li>
+								<li>Event details: BBQ at Dads. 4:30pm.</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Birthday.jpg"></li> -->
+								<li>Event type: Birthday</li>
+								<li>Date: 2013-09-24</li>
+								<li>Info: Chars Birthday</li>
+								<li>Importance: 5</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: Most likely going to dinner and a movie.</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+						</div>
+			
+						<div data-role="collapsible" data-collapsed="true" data-theme="b">
+							<h3><img src="img/Meeting.jpg"> Meeting</h3>
+							<ul>
+								<!-- <li><img src="img/Meeting.jpg"></li> -->
+								<li>Event type: Meeting</li>
+								<li>Date: 2012-12-10</li>
+								<li>Info: Meeting with Elves Union</li>
+								<li>Importance: 4</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: The elves want more money or they will strike!</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Meeting.jpg"></li> -->
+								<li>Event type: Meeting</li>
+								<li>Date: 2012-12-24</li>
+								<li>Info: Meeting with Santa Clause</li>
+								<li>Importance: 3</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: Don't forget milk, cookies, and carrots!!</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Meeting.jpg"></li> -->
+								<li>Event type: Meeting</li>
+								<li>Date: 2015-01-01</li>
+								<li>Info: Meeting with Doc</li>
+								<li>Importance: 5</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: Must fix the DeLorean first!!</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							
+						</div>
+						
+						<div data-role="collapsible" data-collapsed="true" data-theme="b">
+							<h3><img src="img/Other.jpg"> Other</h3>
+							<ul>
+								<!-- <li><img src="img/Other.jpg"></li> -->
+								<li>Event type: Other</li>
+								<li>Date: 2012-10-31</li>
+								<li>Info: Halloween</li>
+								<li>Importance: 2</li>
+								<li>Is attendance required?: Undecided</li>
+								<li>Event details: Trick or treat!!</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Other.jpg"></li> -->
+								<li>Event type: Other</li>
+								<li>Date: 2012-11-06</li>
+								<li>Info: Election Day</li>
+								<li>Importance: 1</li>
+								<li>Is attendance required?: No</li>
+								<li>Event details: Already voted.</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Other.jpg"></li> -->
+								<li>Event type: Other</li>
+								<li>Date: 2012-12-21</li>
+								<li>Info: End of the world</li>
+								<li>Importance: 4</li>
+								<li>Is attendance required?: Undecided</li>
+								<li>Event details: This should be interesting...</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							<ul>
+								<!-- <li><img src="img/Other.jpg"></li> -->
+								<li>Event type: Other</li>
+								<li>Date: 2012-12-31</li>
+								<li>Info: New Years Eve</li>
+								<li>Importance: 4</li>
+								<li>Is attendance required?: Yes</li>
+								<li>Event details: Gonna party like it's 1899!!</li>
+								<ul>
+									<a href="404.html">Edit Date</a><br>
+									<a href="404.html">Delete Date</a>
+								</ul>
+							</ul>
+							
+						</div>
+
+					</div>				
+				</fieldset>
+				</div>			
+			<div data-role="footer" data-position="fixed" data-id="index" data-theme="a">
+				<div data-role="navbar" >
+					<ul>
+						<li><a href="bronze/index.html" Data-ajax="false">Bronze App</a></li>
+						<li><a href="index.html" Data-ajax="false">Home</a></li>
+						<li><a href="404.html" Data-ajax="false">Search</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	
 	</body>
 </html>
