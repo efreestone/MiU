@@ -105,7 +105,7 @@ window.addEventListener("DOMContentLoaded", function() {
         makeDiv.appendChild(makeList);
         //makeList.setAttribute("data-role", "listview");
         //makeList.setAttribute("data-filter", "true");
-        document.body.appendChild(makeDiv);
+        dispData.appendChild(makeDiv);
         gE("items").style.display = "block";
         for(var i=0, len=localStorage.length; i<len; i++) {
             var makeLi = document.createElement("li");
