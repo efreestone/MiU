@@ -28,3 +28,16 @@ legend { /* Titles */
     color: #172934;
     text-align: center;
 }
+
+fieldset#newsFS { /* Light colored box around various elements */
+    background-color: #ccf5fd;
+    
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: solid 1px #172934;
+    margin-bottom: 5px;
+}
+
+legend#recent {
+	margin-bottom: -15px;
+}
