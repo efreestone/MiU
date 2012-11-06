@@ -98,9 +98,10 @@ window.addEventListener("DOMContentLoaded", function() {
         }
         //Write Data from Local Storage to the browser.
         var makeDiv = document.createElement("div");
-   //makeDiv.insertBefore("makeDiv", "navBar");
         makeDiv.setAttribute("id", "items");
         //makeDiv.setAttribute("data-role", "content");
+        //makeDiv.setAttribute("data-role", "listview");
+        //makeDiv.setAttribute("data-filter", "true");
         var makeList = document.createElement("ul");
         makeDiv.appendChild(makeList);
         //makeList.setAttribute("data-role", "listview");
