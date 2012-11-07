@@ -11,6 +11,14 @@ Gold App
     background-color: #7ED0E0 !important;
 }
 
+h1 {
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1px;
+    margin-bottom: 4px;
+}
+
 a>img { /* To Center my Feature on index */
 	display: block;
 	margin-left: auto;
