@@ -24,7 +24,6 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 		<link rel="stylesheet" href="css/indexStyles.css" type="text/css" />
 		
-		
 		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 		<script src="js/libs/modernizr.custom.min.js"></script>
 	
@@ -32,16 +31,14 @@
 	<body>
 		<div data-role="page" id="index">
 		<!-- Entire img is link to additem.html -->	
-			<a href="additem.html" Data-ajax="false"><img src="img/Logo1.jpg" data-id="feature"></img></a>
-			<!-- Search form text box -->
+			<a href="#addItem" Data-ajax="false"><img src="img/Logo1.jpg" data-id="feature"></img></a>
 				<div data-role="content">
 				<fieldset>
 				<legend>Browse by Event Type</legend>
 					<div data-role="listview" data-filter="true" data-filtertext="true">
 						
 						<div data-role="collapsible" data-collapsed="true" data-theme="b">
-							<h3><img src="img/Anniversary.jpg"> Anniversary</h3>
-								
+							<h3><img src="img/Anniversary.jpg"> Anniversary</h3>	
 							<ul>
 								<!-- <li><img src="img/Anniversary.jpg"></li> -->
 								<li>Event type: Anniversary</li>
@@ -263,7 +260,6 @@
 									<a href="404.html">Delete Date</a>
 								</ul>
 							</ul>
-							
 						</div>
 						
 						<div data-role="collapsible" data-collapsed="true" data-theme="b">
@@ -335,8 +331,22 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+		</div> 
+	<!-- End of Index -->
+		<div data-role="page" id="addItem">
 		
+		
+			<div data-role="footer" data-position="fixed" data-id="index" data-theme="a">
+				<div data-role="navbar" >
+					<ul>
+						<li><a href="http://efreestone.github.com/MiU/Project2/Bronze/" Data-ajax="false">Bronze App</a></li>
+						<li><a href="index.html" Data-ajax="false">Home</a></li>
+						<li><a href="404.html" Data-ajax="false">Search</a></li>
+					</ul>
+				</div>
+			</div>
+		</div> 
+	<!-- End of addItem -->
 	
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
