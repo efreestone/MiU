@@ -336,33 +336,51 @@
 		<div data-role="page" id="addItem">
 			<h1><img src="img/Logo.jpg"></img></h1>
 			<form action="#" method="post" id="eventForm"/>
-				<fieldset data-role="none">
+				<fieldset id="inputTop" data-role="none">
 				<legend>Event Info</legend>
 				<span id="notice">* fields are required.</span>
 				<ul id="errors"></ul>
-				<ul data-role="none">
+				<ul data-role="content">
 		<!-- Type of Event -->
-					<li id="select" data-role="none"><label for="select" data-role="none">*Type of Event:</label></li>
+					<li><label for="eventType" class="select">*Type of Event:</label>
+						<select name="eventType" id="eventType" data-role="none">
+							<option>--Choose An Event Type--</option>
+							<option value="Anniversary">Anniversary</option>
+							<option value="Appointment">Appointment</option>
+							<option value="Birthday">Birthday</option>
+							<option value="Meeting">Meeting</option>
+							<option value="Other">Other</option>
+						</select>
+					</li>
 		<!-- Date of Event -->
-					<li ><label for="evdate">*Event Date:</label><input data-role="none" type="date" id="evdate" /></li>
+					<li><label for="evDate">*Event Date:</label>
+						<input type="date" name="evDate" id="evDate" value="" data-role="none"/>
+					</li>
 		<!-- Event Description -->
-					<li><label for="evinfo">*Event Information:</label><input data-role="none" type="text" id="evinfo" placeholder="Dads birthday, etc."/></li>
+					<li><label for="evInfo">*Event Information:</label>
+						<input type="text" name="evInfo" id="evInfo" value="" placeholder="Dads birthday, etc." data-role="none"/>
+					</li>
+					<!-- <li><label for="evinfo">*Event Information:</label><input data-role="none" type="text" id="evinfo" placeholder="Dads birthday, etc."/></li>
 		<!-- Importance of Event Slider -->
 					<li><label for="importance">Event Importance:</label><br>
-						1 <input data-role="none" type="range" id="importance" min="1" max="5" class="range" value="3" onchange="chosen.value=value"/> 5 <br>		
+						1 <input type="range" name="importance" id="importance" value="3" min="1" max="5" onchange="chosen.value=value" data-role="none"/> 5 <br>	
 		<!-- Slider output -->
 						<output id="chosen">3</output></li>
 		<!-- Attendance required?  -->
+		
 					<li>Is Attendance Required?
 						<ul class="checkbox">
-							<li><input type="radio" value="Yes" id="Yes" name="attend" data-role="none"/><label for="Yes">Yes</label></li>
-							<li><input type="radio" value="No" id="No" name="attend" data-role="none"/><label for="No">No</label></li>
-							<li><input type="radio" value="Undecided" id="Undecided" name="attend" data-role="none"/><label for="Undecided">Undecided</label></li>
+							<li><input type="radio" value="Yes" id="Yes" name="attend" data-role="none"/>
+								<label for="Yes">Yes</label></li>
+							<li><input type="radio" value="No" id="No" name="attend" data-role="none"/>
+								<label for="No">No</label></li>
+							<li><input type="radio" value="Undecided" id="Undecided" name="attend" data-role="none" checked="checked"/>
+								<label for="Undecided">Undecided</label></li>
 						</ul>
 					</li>
 				</ul>				
 				</fieldset>
-				<fieldset data-role="none">
+				<fieldset id="inputBottom" data-role="none">
 					<legend>Event Details</legend>
 		<!-- Event Details (ie location of party etc) -->
 					<label for="details"></label><textarea data-role="none" id="details" placeholder="Party Location, Contact Info, etc."></textarea>
@@ -375,9 +393,9 @@
 			</form>
 			<nav>
 		<!-- Clear Stored Data Link -->
-				<a href="#" id="clearData" data-role="none" Data-ajax="false">Clear Local Data</a> 
+				<a href="404.html" id="clearData" data-role="none" Data-ajax="false">Clear Local Data</a> 
 		<!-- Display Data Link -->
-				<a href="#" id="displayData" data-role="none" Data-ajax="false">Display Data</a>
+				<a href="404.html" id="displayData" data-role="none" Data-ajax="false">Display Data</a>
 		<!-- Add New Date Link -->
 				<a href="additem.html" id="addNew" style="display:none;" data-role="none" Data-ajax="false">Add New Date</a>
 			</nav>
