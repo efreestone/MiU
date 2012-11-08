@@ -109,6 +109,12 @@ input#submit { /* Save Date button on additem */
     margin-right: auto;
 }
 
+input#reset { /* Browse by Event Type icons */
+	display: block;
+	margin-left: 130px;
+	margin-right: auto;
+}
+
 nav>a { /* All <a> tags within nav. Display Data, Clear Local Data, etc */
     background-color: #f2fdff;
     -webkit-border-radius: 10px;
@@ -118,6 +124,12 @@ nav>a { /* All <a> tags within nav. Display Data, Clear Local Data, etc */
     font-family: "Helvetica", "Arial";
     font-size: 120%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#f2fdff), to(#97edfc));
+}
+
+label.error { /* Validator error messages */
+	display: block;
+	margin: 10px 50px;
+	color: red;
 }
 
 span#notice { /* Required elements notice */

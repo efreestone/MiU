@@ -342,9 +342,9 @@
 				<ul id="errors"></ul>
 				<ul data-role="content">
 		<!-- Type of Event -->
-					<li><label for="eventType" class="select">*Type of Event:</label>
-						<select name="eventType" id="eventType" data-role="none">
-							<option>--Choose An Event Type--</option>
+					<li><label for="eventType">*Type of Event:</label>
+						<select name="eventType" id="eventType"  class="required" data-role="none">
+							<option value="" data-placeholder="true">--Choose An Event Type--</option>
 							<option value="Anniversary">Anniversary</option>
 							<option value="Appointment">Appointment</option>
 							<option value="Birthday">Birthday</option>
@@ -354,15 +354,14 @@
 					</li>
 		<!-- Date of Event -->
 					<li><label for="evDate">*Event Date:</label>
-						<input type="date" name="evDate" id="evDate" value="" data-role="none"/>
+						<input type="date" name="evDate" id="evDate" value="" class="required" data-role="none"/>
 					</li>
 		<!-- Event Description -->
 					<li><label for="evInfo">*Event Information:</label>
-						<input type="text" name="evInfo" id="evInfo" value="" placeholder="Dads birthday, etc." data-role="none"/>
+						<input type="text" name="evInfo" id="evInfo" value="" placeholder="Dads birthday, etc." class="required" data-role="none"/>
 					</li>
-					<!-- <li><label for="evinfo">*Event Information:</label><input data-role="none" type="text" id="evinfo" placeholder="Dads birthday, etc."/></li>
 		<!-- Importance of Event Slider -->
-					<li><label for="importance">Event Importance:</label><br>
+					<li><label for="importance">Event Importance:</label><br>  <!--data-role="none" below -->
 						1 <input type="range" name="importance" id="importance" value="3" min="1" max="5" onchange="chosen.value=value" data-role="none"/> 5 <br>	
 		<!-- Slider output -->
 						<output id="chosen">3</output></li>
@@ -374,7 +373,7 @@
 								<label for="Yes">Yes</label></li>
 							<li><input type="radio" value="No" id="No" name="attend" data-role="none"/>
 								<label for="No">No</label></li>
-							<li><input type="radio" value="Undecided" id="Undecided" name="attend" data-role="none" checked="checked"/>
+							<li><input type="radio" value="Undecided" id="Undecided" name="attend" checked="checked" data-role="none"/>
 								<label for="Undecided">Undecided</label></li>
 						</ul>
 					</li>
@@ -385,11 +384,12 @@
 		<!-- Event Details (ie location of party etc) -->
 					<label for="details"></label><textarea data-role="none" id="details" placeholder="Party Location, Contact Info, etc."></textarea>
 		<!-- Hidden Input -->	
-					<input type="hidden" value="true" />
+					<input type="hidden" value="true"/>
 				</fieldset>
 		<!-- Submit Button -->	
 				<input type="submit" value="Save Date!" id="submit" data-role="none" Data-ajax="false"/>
-				<br>
+		<!-- Reset Form Button -->
+				<input type="reset" value="Reset" id="reset" data-icon="delete" data-mini="true" data-inline="true" data-theme="a"/>
 			</form>
 			<nav>
 		<!-- Clear Stored Data Link -->
@@ -415,6 +415,7 @@
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/json.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	
