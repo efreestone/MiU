@@ -49,11 +49,6 @@ div>ul { /* stored data */
     font-family: "Helvetica", "Arial";
 }
 
-div>h3 { /* Browse by Event Type icons */
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
 fieldset#inputTop { /* Light colored box around top part of Input form */
     background-color: #ccf5fd;
     -webkit-border-radius: 10px;
@@ -131,6 +126,10 @@ label.error { /* Validator error messages */
 	display: block;
 	margin: 10px 50px;
 	color: red;
+}
+
+#popErrors {
+	display: none;
 }
 
 span#notice { /* Required elements notice */

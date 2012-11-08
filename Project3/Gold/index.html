@@ -388,6 +388,8 @@
 				<input type="submit" value="Save Date!" id="submit" data-role="none" Data-ajax="false"/>
 		<!-- Reset Form Button -->
 				<input type="reset" value="Reset Form" id="reset" data-icon="delete" data-mini="true" data-inline="true" data-role="none"/>
+				
+				<a href="#formErrors" id="popErrors" data-rel="dialog" data-transition="pop">Open Errors</a>
 			</form>
 			<nav>
 		<!-- Clear Stored Data Link -->
@@ -409,6 +411,16 @@
 			</div>
 		</div> 
 	<!-- End of addItem -->
+		<div data-role="dialog" id="formErrors">
+			<div data-role="header" data-position="fixed">
+				<h1>Missing fields.</h1>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li>Test.</li>
+				</ul>
+			</div>
+		</div>
 	
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
