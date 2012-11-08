@@ -393,11 +393,11 @@
 			</form>
 			<nav>
 		<!-- Clear Stored Data Link -->
-				<a href="404.html" id="clearData" data-role="none" Data-ajax="false">Clear Local Data</a> 
+				<a href="#" id="clearData" data-role="none" Data-ajax="false">Clear Local Data</a> 
 		<!-- Display Data Link -->
-				<a href="404.html" id="displayData" data-role="none" Data-ajax="false">Display Data</a>
+				<a href="#" id="displayData" data-role="none" Data-ajax="false">Display Data</a>
 		<!-- Add New Date Link -->
-				<a href="additem.html" id="addNew" style="display:none;" data-role="none" Data-ajax="false">Add New Date</a>
+				<a href="#addItem" id="addNew" style="display:none;" data-role="none" Data-ajax="false">Add New Date</a>
 			</nav>
 		
 			<div data-role="footer" data-position="fixed" data-id="index" data-theme="a">
@@ -408,6 +408,10 @@
 						<li><a href="404.html" Data-ajax="false">Search</a></li>
 					</ul>
 				</div>
+			</div>
+		<!-- div to fix saved data display issue -->
+			<div data-role="content" id="dispData">
+			
 			</div>
 		</div> 
 	<!-- End of addItem -->
