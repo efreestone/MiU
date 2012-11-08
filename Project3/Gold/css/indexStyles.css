@@ -98,7 +98,7 @@ input#submit { /* Save Date button on additem */
     background-color: #026f1b;
     color: #ffffff;
     font-size: 200%;
-    padding: 10px 10%;
+    padding: 10px 20%;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     border: solid 1px #172934;
@@ -111,8 +111,9 @@ input#submit { /* Save Date button on additem */
 
 input#reset { /* Browse by Event Type icons */
 	display: block;
-	margin-left: 130px;
+	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 10px
 }
 
 nav>a { /* All <a> tags within nav. Display Data, Clear Local Data, etc */
@@ -137,9 +138,10 @@ span#notice { /* Required elements notice */
 	color: #172934;
     font-size: 85%;	
     margin-left: 10px;
+    margin-bottom: -30px;
 }
 
-input#importance { /* Slider */
+/*input#importance { /* Slider bar */
     -webkit-appearance: none;
     background-color: #172934;
     height: 8px;
@@ -148,7 +150,7 @@ input#importance { /* Slider */
     margin-bottom: 18px;
 }
  
-input#importance::-webkit-slider-thumb { /* Slider */
+/*input#importance::-webkit-slider-thumb { /* Slider thumb */
     -webkit-appearance: none;
     position: relative;
     width: 20px;
@@ -160,7 +162,7 @@ input#importance::-webkit-slider-thumb { /* Slider */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#68d4ea), to(#23a0b9));
 }
 
-output#chosen { /* Slider Output */
+/*output#chosen { /* Slider Output */
 	background-color: #f2fdff;
     -webkit-border-radius: 10px;
     border-radius: 10px;

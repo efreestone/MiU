@@ -38,7 +38,7 @@ var getData = function(){
 };*/
 
 var storeData = function(data){
-	console.log(data);
+	//console.log(data);
 }; 
 /*
 var	deleteItem = function (){

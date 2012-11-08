@@ -361,10 +361,8 @@
 						<input type="text" name="evInfo" id="evInfo" value="" placeholder="Dads birthday, etc." class="required" data-role="none"/>
 					</li>
 		<!-- Importance of Event Slider -->
-					<li><label for="importance">Event Importance:</label><br>  <!--data-role="none" below -->
-						1 <input type="range" name="importance" id="importance" value="3" min="1" max="5" onchange="chosen.value=value" data-role="none"/> 5 <br>	
-		<!-- Slider output -->
-						<output id="chosen">3</output></li>
+					<li><label for="importance">Event Importance:</label>
+						<input type="range" name="importance" id="importance" value="3" min="1" max="5" data-track-theme="c" data-mini="true"/>	
 		<!-- Attendance required?  -->
 		
 					<li>Is Attendance Required?
@@ -389,7 +387,7 @@
 		<!-- Submit Button -->	
 				<input type="submit" value="Save Date!" id="submit" data-role="none" Data-ajax="false"/>
 		<!-- Reset Form Button -->
-				<input type="reset" value="Reset" id="reset" data-icon="delete" data-mini="true" data-inline="true" data-theme="a"/>
+				<input type="reset" value="Reset Form" id="reset" data-icon="delete" data-mini="true" data-inline="true" data-role="none"/>
 			</form>
 			<nav>
 		<!-- Clear Stored Data Link -->
