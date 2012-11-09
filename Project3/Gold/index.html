@@ -38,7 +38,7 @@
 					<div data-role="listview" data-filter="true" data-filtertext="true">
 						
 						<div data-role="collapsible" data-collapsed="true" data-theme="b">
-							<h3><img src="img/Anniversary.jpg"> Anniversary</h3>	
+							<h3><img src="img/annBrowse.png"></h3>	
 							<ul>
 								<!-- <li><img src="img/Anniversary.jpg"></li> -->
 								<li>Event type: Anniversary</li>
@@ -95,7 +95,7 @@
 						</div>
 						
 						<div data-role="collapsible" data-collapsed="true" data-theme="b">
-							<h3><img src="img/Appointment.jpg"> Appointment</h3>
+							<h3><img src="img/appBrowse.png"></h3>
 							<ul>
 								<!-- <li><img src="img/Appointment.jpg"></li> -->
 								<li>Event type: Appointment</li>
@@ -138,7 +138,7 @@
 						</div>
 						
 						<div data-role="collapsible" data-collapsed="true" data-theme="b">
-							<h3><img src="img/Birthday.jpg"> Birthday</h3>
+							<h3><img src="img/birBrowse.png"></h3>
 							<ul>
 								<!-- <li><img src="img/Birthday.jpg"></li> -->
 								<li>Event type: Birthday</li>
@@ -220,7 +220,7 @@
 						</div>
 			
 						<div data-role="collapsible" data-collapsed="true" data-theme="b">
-							<h3><img src="img/Meeting.jpg"> Meeting</h3>
+							<h3><img src="img/meeBrowse.png"></h3>
 							<ul>
 								<!-- <li><img src="img/Meeting.jpg"></li> -->
 								<li>Event type: Meeting</li>
@@ -263,7 +263,7 @@
 						</div>
 						
 						<div data-role="collapsible" data-collapsed="true" data-theme="b">
-							<h3><img src="img/Other.jpg"> Other</h3>
+							<h3><img src="img/othBrowse.png"></h3>
 							<ul>
 								<!-- <li><img src="img/Other.jpg"></li> -->
 								<li>Event type: Other</li>
@@ -388,14 +388,16 @@
 				<input type="submit" value="Save Date!" id="submit" data-role="none" Data-ajax="false"/>
 		<!-- Reset Form Button -->
 				<input type="reset" value="Reset Form" id="reset" data-icon="delete" data-mini="true" data-inline="true" data-role="none"/>
+				
+				<a href="#formErrors" id="popErrors" data-rel="dialog" data-transition="pop">Open Errors</a>
 			</form>
 			<nav>
 		<!-- Clear Stored Data Link -->
-				<a href="404.html" id="clearData" data-role="none" Data-ajax="false">Clear Local Data</a> 
+				<a href="#" id="clearData" data-role="none" Data-ajax="false">Clear Local Data</a> 
 		<!-- Display Data Link -->
-				<a href="404.html" id="displayData" data-role="none" Data-ajax="false">Display Data</a>
+				<a href="#" id="displayData" data-role="none" Data-ajax="false">Display Data</a>
 		<!-- Add New Date Link -->
-				<a href="additem.html" id="addNew" style="display:none;" data-role="none" Data-ajax="false">Add New Date</a>
+				<a href="index.html" id="addNew" style="display:none;" data-role="none" Data-ajax="false">Add New Date</a>
 			</nav>
 		
 			<div data-role="footer" data-position="fixed" data-id="index" data-theme="a">
@@ -407,8 +409,22 @@
 					</ul>
 				</div>
 			</div>
+		<!-- div to fix saved data display issue -->
+			<div data-role="content" id="dispData">
+			
+			</div>
 		</div> 
 	<!-- End of addItem -->
+		<div data-role="dialog" id="formErrors">
+			<div data-role="header" data-position="fixed">
+				<h1>Missing fields.</h1>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li>Test.</li>
+				</ul>
+			</div>
+		</div>
 	
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
