@@ -120,6 +120,7 @@ $('#addItem').on('pageinit', function(){
         //Convert the string from local storage value back to an object by using JSON.parse()
             var obj = JSON.parse(value);
             var makeSubList = document.createElement("ul");
+            makeSubList.setAttribute("id", "dispData");
             makeLi.appendChild(makeSubList);
             getImage(obj.events[1], makeSubList);
             for(var n in obj) {

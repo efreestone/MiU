@@ -61,7 +61,19 @@ fieldset#inputBottom { /* Light colored box around bottom part of Input form */
     padding-left: 20px;
 }
 
-div>ul>li { /* stored data */
+div>ul { /* Browse data */
+    background-color: #ccf5fd;
+    color: #172934;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: solid 1px #172934;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: -5px;
+    font-family: "Helvetica", "Arial";
+}
+
+ul#dispData { /* stored data */
     background-color: #ccf5fd;
     color: #172934;
     -webkit-border-radius: 10px;
