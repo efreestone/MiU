@@ -141,34 +141,3 @@ span#notice { /* Required elements notice */
     margin-left: 10px;
     margin-bottom: -30px;
 }
-
-/*input#importance { /* Slider bar */
-    -webkit-appearance: none;
-    background-color: #172934;
-    height: 8px;
-    width: 155px;
-    margin-top: 18px;
-    margin-bottom: 18px;
-}
- 
-/*input#importance::-webkit-slider-thumb { /* Slider thumb */
-    -webkit-appearance: none;
-    position: relative;
-    width: 20px;
-    height: 30px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    border-radius: 40px;
-    border: solid 1px #b1edf9;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#68d4ea), to(#23a0b9));
-}
-
-/*output#chosen { /* Slider Output */
-	background-color: #f2fdff;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    border: solid 1px #172934;
-    padding: 2px 10px;
-    margin-left: 78px;
-    width: 25px; 
-    font-family: "Helvetica", "Arial";
