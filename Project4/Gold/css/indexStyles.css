@@ -37,8 +37,6 @@ legend { /* Titles */
     text-align: center;
 }
 
-
-
 fieldset#inputTop { /* Light colored box around top part of Input form */
     background-color: #ccf5fd;
     -webkit-border-radius: 10px;
@@ -48,6 +46,8 @@ fieldset#inputTop { /* Light colored box around top part of Input form */
     margin-right: 15px;
     margin-bottom: 5px;
     padding-left: 20px;
+    box-shadow: -3px 3px 8px 2px rgba(0,0,0,0.3);
+    /*-webkit-box-shadow: -1px 1px 1px 1px #172934;*/
 }
 
 fieldset#inputBottom { /* Light colored box around bottom part of Input form */
@@ -59,9 +59,10 @@ fieldset#inputBottom { /* Light colored box around bottom part of Input form */
     margin-right: 15px;
     margin-bottom: 5px;
     padding-left: 20px;
+    box-shadow: -3px 3px 8px 2px rgba(0,0,0,0.3);
 }
 
-div>ul { /* Browse data */
+ul#browse { /* Browse data */
     background-color: #ccf5fd;
     color: #172934;
     -webkit-border-radius: 10px;
@@ -71,6 +72,7 @@ div>ul { /* Browse data */
     padding-top: 5px;
     padding-left: -5px;
     font-family: "Helvetica", "Arial";
+    box-shadow: -3px 3px 8px 2px rgba(0,0,0,0.3);
 }
 
 ul#dispData { /* stored data */
@@ -83,6 +85,7 @@ ul#dispData { /* stored data */
     padding-top: 5px;
     padding-left: -5px;
     font-family: "Helvetica", "Arial";
+    box-shadow: -3px 3px 8px 2px rgba(0,0,0,0.3);
 }
 
 textarea { /* Event Details text box */
@@ -112,17 +115,24 @@ input#submit { /* Save Date button on additem */
     border-radius: 10px;
     border: solid 1px #172934;
     text-shadow: 0 -1px 0 #172934;
-    margin-bottom: 10px;
     display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: -3px 3px 8px 2px rgba(0,0,0,0.3);
 }
 
 input#reset { /* Browse by Event Type icons */
+	font-family: "Helvetica", "Arial", sans-serif;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10px
+	margin-bottom: 10px;
+	background: #fc0303;
+	border-radius: 10px;
+    border: solid 1px #172934;
+    color: #ffffff;
 }
 
 nav>a { /* All <a> tags within nav. Display Data, Clear Local Data, etc */
@@ -138,8 +148,8 @@ nav>a { /* All <a> tags within nav. Display Data, Clear Local Data, etc */
 
 label.error { /* Validator error messages */
 	display: block;
-	margin: 10px 50px;
-	color: red;
+	margin: 10px 25px;
+	color: #fc0303;
 }
 
 #popErrors {
