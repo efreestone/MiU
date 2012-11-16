@@ -251,9 +251,9 @@ $('#addItem').on('pageinit', function(){
     	
     	//Reset error messages
     	errMsg.innerHTML = "";
-    	getEvents.style.border = "1px solid black";
-    	getEvdate.style.border = "1px solid black";
-   		getEvinfo.style.border = "1px solid black";
+    	//getEvents.style.border = "1px solid black";
+    	//getEvdate.style.border = "1px solid black";
+   		//getEvinfo.style.border = "1px solid black";
     	
     	//Get error messages
     	var messageAry = [];
