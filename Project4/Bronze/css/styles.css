@@ -16,7 +16,7 @@ html {
 }
 
 .ui-mobile fieldset {
-	background-color: #ccf5fd;
+	background-color: #FCFAA4;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     border: solid 1px #172934;
@@ -25,18 +25,13 @@ html {
     margin-bottom: 5px;
 }
 
-
-/*input#span {
-	display: none;
-}*/
-
 div#home {
     background-color: #7ED0E0;
 }
 
 .ui-body-c, .ui-overlay-c {
 	background-image: none;
-    background-color: #7ED0E0 !important;
+    background-color: #808080 !important;
 }
 
 
@@ -66,7 +61,7 @@ a>img { /* To Center my Feature on index */
 }
 
 legend { /* Titles */
-    background-color: #f2fdff;
+    background-color: #70F970;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     border: solid 1px #172934;
@@ -137,7 +132,7 @@ input#submit { /* Save Date button on additem */
     font-family: "Helvetica", "Arial", sans-serif;
     display: inline-table;
     text-align: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(#05c331), to(#026f1b));
+    background: -webkit-gradient(linear, left top, left bottom, from(#C97506), to(#F2890A));
     background-color: #026f1b;
     color: #ffffff;
     font-size: 200%;

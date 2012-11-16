@@ -19,7 +19,7 @@ a>img { /* To Center my Feature on index */
 }
 
 legend { /* Titles */
-    background-color: #f2fdff;
+    background-color: #FCEE21;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     border: solid 1px #172934;
@@ -30,7 +30,7 @@ legend { /* Titles */
 }
 
 fieldset#newsFS { /* Light colored box around various elements */
-    background-color: #ccf5fd;
+    background-color: #F4B562;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     border: solid 1px #172934;
